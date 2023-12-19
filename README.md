@@ -12,7 +12,6 @@ Guided by a lab from ECE563 at NC State University taught by Prof. [Eric Rotenbe
 1. Type "make" to build.  (Type "make clean" first if you already compiled and want to recompile from scratch.)
 
 2. Run trace reader:
-
    To run without throttling output:
    ```
    ./cachesim 32 8192 4 262144 8 3 10 ./example_trace.txt
@@ -28,8 +27,6 @@ Guided by a lab from ECE563 at NC State University taught by Prof. [Eric Rotenbe
    ./cachesim 32 8192 4 262144 8 3 10 ./example_trace.txt > echo_trace.txt
    diff ./example_trace.txt echo_trace.txt
    ```
-
-   To run and confirm that all requests in the trace were read correctly:
    The result of "diff" should indicate that the only difference is that echo_trace.txt has the configuration information.
    0a1,10
    ===== Simulator configuration =====
@@ -42,4 +39,3 @@ Guided by a lab from ECE563 at NC State University taught by Prof. [Eric Rotenbe
    PREF_M:     10
    trace_file: ./example_trace.txt
    ===================================
-
